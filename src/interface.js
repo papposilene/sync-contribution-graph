@@ -18,7 +18,7 @@ const questions = [
         type: "input",
         name: "gituri",
         message:
-            "Please enter Github/Gitlab server with which you'd like to sync contributions:",
+            "Please enter Github/Gitlab server (no trailing slash) with which you'd like to sync contributions:",
         validate: (value) =>
             axios
                 .get(`${value}`)
